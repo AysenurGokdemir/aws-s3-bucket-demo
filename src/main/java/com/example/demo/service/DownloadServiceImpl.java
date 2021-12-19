@@ -54,7 +54,7 @@ public class DownloadServiceImpl implements DownloadService {
 
             S3ObjectInputStream s3is = o.getObjectContent();
 
-            File dir = new File(path + "/Altair-Fatura-Aliss");
+            File dir = new File(path + "/invoice-given");
 
             dir.mkdirs();
             FileOutputStream fos = null;
@@ -89,7 +89,7 @@ public class DownloadServiceImpl implements DownloadService {
         List<String> results = new ArrayList<String>();
 
 
-        File[] files = new File("C:\\Users\\aysen\\Desktop\\Altair-Fatura-Alis").listFiles();
+        File[] files = new File("C:\\Users\\aysenur\\Desktop\\invoice-given").listFiles();
 
         //If this pathname does not denote a directory, then listFiles() returns null.
 
